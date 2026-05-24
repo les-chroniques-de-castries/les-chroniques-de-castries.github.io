@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Chroniques de Castries ⚔</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Shoegum - TBD | Les Chroniques de Castries ⚔</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --parchment: #f4e8c1;
-            --parchment-dark: #e0d0a8;
-            --ink: #2b1810;
-            --ink-light: #4a3525;
-            --crimson: #5e0b0b;
-            --crimson-light: #8b1a1a;
-            --gold: #c4a96e;
-            --gold-bright: #d4af37;
-            --gold-dark: #9a7d3e;
-            --leather: #1c1208;
-            --leather-light: #3a2a18;
+            --parchment: #1a1e24;
+            --parchment-dark: #121519;
+            --ink: #cfd6de;
+            --ink-light: #9ba5b1;
+            --crimson: #647c98;
+            --crimson-light: #7b94b1;
+            --gold: #5b6f84;
+            --gold-bright: #7a92ad;
+            --gold-dark: #3f4d5c;
+            --leather: #0b0d10;
+            --leather-light: #161a20;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-            background-color: #1a1a1a;
+            background-color: #0b0d10;
             background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
             color: var(--ink);
             font-family: 'Crimson Text', serif;
@@ -42,7 +42,7 @@
                 radial-gradient(ellipse at 20% 50%, rgba(196,169,110,0.08) 0%, transparent 50%),
                 radial-gradient(ellipse at 80% 20%, rgba(196,169,110,0.06) 0%, transparent 50%);
             padding: 50px 60px;
-            box-shadow: 0 0 60px rgba(0,0,0,0.7);
+            box-shadow: 0 0 80px rgba(100, 124, 152, 0.2);
             position: relative;
         }
 
@@ -80,6 +80,22 @@
         .corner.bl::before { bottom: 0; } .corner.bl::after { bottom: 0; }
         .corner.br::before { bottom: 0; } .corner.br::after { bottom: 0; }
 
+
+        /* ===== BACK LINK ===== */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.8em;
+            color: var(--gold-dark);
+            text-decoration: none;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--crimson-light); }
+        .back-link svg { width: 14px; height: 14px; fill: currentColor; }
         /* ===== HERO ===== */
         .hero {
             text-align: center;
@@ -399,94 +415,58 @@
     <div class="container">
         <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
 
+
+        <a href="../../index.html" class="back-link">
+            <svg viewBox="0 0 100 100"><polygon points="70,10 30,50 70,90"/></svg>
+            Retour aux aventures
+        </a>
         <div class="hero">
-            <div class="hero-subtitle">Portail Multi-Systèmes</div>
+            <div class="hero-subtitle">Système Shoegum</div>
             <h1>Les Chroniques de Castries ⚔</h1>
         </div>
 
-        <!-- ===== WORLDS SECTION ===== -->
-        <div class="section-title">Les Aventures</div>
-        <div class="session-grid">
-            <a href="pf2e/Escorte/index.html" class="session-card">
-                <div class="card-thumb">
-                    <img src="Assets/opening_scene_v2.png" alt="L'Escorte">
+        <!-- ===== TEAM: Le Quatuor d'Absalom ===== -->
+        <div class="team-section">
+            <div class="team-card">
+                <div class="team-header">
+                    <div class="team-icon">🛡</div>
+                    <div class="team-name">L'Agence</div>
                 </div>
-                <div class="card-body">
-                    <div class="card-session-num">Pathfinder 2E</div>
-                    <div class="card-title">L'Escorte</div>
-                    <div class="card-meta">
-                        <span><span class="label">Système</span> PF2e</span>
-                        <span><span class="label">Monde</span> Golarion</span>
-                    </div>
-                    <div class="card-teaser">
-                        Suivez les aventures du Quatuor d'Absalom : Celeste, Go Block, Maxime Hus et Pipo Petitpas dans la région d'Otari...
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
 
-            <a href="dnd5e/TBD/index.html" class="session-card">
-                <div class="card-thumb">
-                    <!-- Placeholder color block for image -->
-                    <img src="Assets/dnd_thumb.png" alt="D&D 5e">
-                </div>
-                <div class="card-body">
-                    <div class="card-session-num">Dungeons & Dragons 5e</div>
-                    <div class="card-title">Campagne TBD</div>
-                    <div class="card-meta">
-                        <span><span class="label">Système</span> D&D 5e</span>
-                        <span><span class="label">Monde</span> Royaumes Oubliés (TBD)</span>
-                    </div>
-                    <div class="card-teaser">
-                        Une nouvelle campagne épique en préparation...
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
+                <div class="team-members chars-bar"></div>
+                <div class="team-adventures-title">— Aventure : À définir —</div>
 
-            <a href="cthulhu/TBD/index.html" class="session-card" style="border-left-color: #3d5c48;">
-                <div class="card-thumb">
-                    <!-- Placeholder color block for image -->
-                    <img src="Assets/cthulhu_thumb.png" alt="Cthulhu">
-                </div>
-                <div class="card-body">
-                    <div class="card-session-num" style="background:#3d5c48;">Horreur Cosmique</div>
-                    <div class="card-title" style="color:#527a60;">Campagne TBD</div>
-                    <div class="card-meta">
-                        <span><span class="label">Système</span> CoC7 / Cthulhu Hack</span>
-                        <span><span class="label">Monde</span> Années 1920 (TBD)</span>
-                    </div>
-                    <div class="card-teaser">
-                        Des mystères insondables attendent nos investigateurs...
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
+                <div class="session-grid"></div>
+            </div>
+                        <div class="card-arrow">›</div>
+                    </a>
 
-            <a href="shoegum/TBD/index.html" class="session-card" style="border-left-color: #4a5d73;">
-                <div class="card-thumb">
-                    <img src="Assets/shoegum_thumb.png" alt="Shoegum">
+                    <a href="session/session-2.html" class="session-card">
+                        <div class="card-thumb">
+                            <img src="../../Assets/kobold_throne.png" alt="Session 2">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-session-num">Session II</div>
+                            <div class="card-title">La Suite de l'Aventure</div>
+                            <div class="card-meta">
+                                <span><span class="label">Date</span> 24 Mai 2026</span>
+                            </div>
+                            <div class="card-teaser">
+                                Notre groupe d'aventuriers, engagés dans une mission d'escorte, s'est enfoncé dans les profondeurs d'un repaire souterrain infesté de kobolds et de créatures monstrueuses. Les événements précédents le...
+                            </div>
+                        </div>
+                        <div class="card-arrow">›</div>
+                    </a>
                 </div>
-                <div class="card-body">
-                    <div class="card-session-num" style="background:#4a5d73;">Enquête & Mystère</div>
-                    <div class="card-title" style="color:#647c98;">Campagne TBD</div>
-                    <div class="card-meta">
-                        <span><span class="label">Système</span> Shoegum (GUMSHOE)</span>
-                        <span><span class="label">Monde</span> Contemporain / Noir (TBD)</span>
-                    </div>
-                    <div class="card-teaser">
-                        Des indices dissimulés, des conspirations tentaculaires et une vérité dangereuse...
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
+            </div>
         </div>
+
         <div class="divider">
             <span class="divider-ornament"><svg viewBox="0 0 100 100"><polygon points="50,10 90,50 50,90 10,50"/></svg></span>
         </div>
 
         <div class="footer">
-            <div class="footer-text">Les Chroniques de Castries ⚔</div>
+            <div class="footer-text">Les Chroniques de Castries ⚔ — Shoegum</div>
         </div>
     </div>
 </body>
