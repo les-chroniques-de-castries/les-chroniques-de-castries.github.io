@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Chroniques de Castries ⚔</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>L'Escorte | Les Chroniques de Castries ⚔</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -80,6 +80,22 @@
         .corner.bl::before { bottom: 0; } .corner.bl::after { bottom: 0; }
         .corner.br::before { bottom: 0; } .corner.br::after { bottom: 0; }
 
+
+        /* ===== BACK LINK ===== */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.8em;
+            color: var(--gold-dark);
+            text-decoration: none;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--crimson-light); }
+        .back-link svg { width: 14px; height: 14px; fill: currentColor; }
         /* ===== HERO ===== */
         .hero {
             text-align: center;
@@ -399,32 +415,85 @@
     <div class="container">
         <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
 
+
+        <a href="../../index.html" class="back-link">
+            <svg viewBox="0 0 100 100"><polygon points="70,10 30,50 70,90"/></svg>
+            Retour aux aventures
+        </a>
         <div class="hero">
             <div class="hero-subtitle">Pathfinder Second Edition</div>
             <h1>Les Chroniques de Castries ⚔</h1>
         </div>
 
-        <!-- ===== WORLDS SECTION ===== -->
-        <div class="section-title">Les Aventures</div>
-        <div class="session-grid">
-            <a href="pf2e/Escorte/index.html" class="session-card">
-                <div class="card-thumb">
-                    <img src="Assets/opening_scene_v2.png" alt="L'Escorte">
+        <!-- ===== TEAM: Le Quatuor d'Absalom ===== -->
+        <div class="team-section">
+            <div class="team-card">
+                <div class="team-header">
+                    <div class="team-icon">🛡</div>
+                    <div class="team-name">Le Quatuor d'Absalom</div>
                 </div>
-                <div class="card-body">
-                    <div class="card-session-num">Pathfinder 2E</div>
-                    <div class="card-title">L'Escorte</div>
-                    <div class="card-meta">
-                        <span><span class="label">Système</span> PF2e</span>
-                        <span><span class="label">Monde</span> Golarion</span>
-                    </div>
-                    <div class="card-teaser">
-                        Suivez les aventures du Quatuor d'Absalom : Celeste, Go Block, Maxime Hus et Pipo Petitpas dans la région d'Otari...
-                    </div>
+
+                <div class="team-members chars-bar">
+                    <a href="../../characters/celeste.html" class="chars-bar-item">
+                        <div class="mini-frame"><img src="../../Assets/Celeste.webp" alt="Celeste"></div>
+                        <div class="mini-name">Celeste</div>
+                    </a>
+                    <a href="../../characters/go-block.html" class="chars-bar-item">
+                        <div class="mini-frame"><img src="../../Assets/GoBlock.webp" alt="Go Block"></div>
+                        <div class="mini-name">Go Block</div>
+                    </a>
+                    <a href="../../characters/maxime-hus.html" class="chars-bar-item">
+                        <div class="mini-frame"><img src="../../Assets/Maxime_Hus.webp" alt="Maxime Hus"></div>
+                        <div class="mini-name">Maxime Hus</div>
+                    </a>
+                    <a href="../../characters/pipo-petitpas.html" class="chars-bar-item">
+                        <div class="mini-frame"><img src="../../Assets/Pipo_Petitpas.webp" alt="Pipo Petitpas"></div>
+                        <div class="mini-name">Pipo</div>
+                    </a>
                 </div>
-                <div class="card-arrow">›</div>
-            </a>
+
+                <div class="team-adventures-title">— Aventure : L'Escorte —</div>
+
+                <div class="session-grid">
+
+                    <a href="session/session-1.html" class="session-card">
+                        <div class="card-thumb">
+                            <img src="../../Assets/opening_scene_v2.png" alt="Session 1">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-session-num">Session I</div>
+                            <div class="card-title">L'Escorte</div>
+                            <div class="card-meta">
+                                <span><span class="label">Date</span> 15 Mai 2026</span>
+                                <span><span class="label">Durée</span> ~5 heures</span>
+                            </div>
+                            <div class="card-teaser">
+                                Engagés comme escorte par la centaure Narala, les aventuriers prennent la route d'Otari. Mais une embuscade kobold, des crabes géants, et un repaire caché dans les falaises vont transformer ce voyage tranquille en épopée périlleuse…
+                            </div>
+                        </div>
+                        <div class="card-arrow">›</div>
+                    </a>
+
+                    <a href="session/session-2.html" class="session-card">
+                        <div class="card-thumb">
+                            <img src="../../Assets/kobold_throne.png" alt="Session 2">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-session-num">Session II</div>
+                            <div class="card-title">La Suite de l'Aventure</div>
+                            <div class="card-meta">
+                                <span><span class="label">Date</span> 24 Mai 2026</span>
+                            </div>
+                            <div class="card-teaser">
+                                Notre groupe d'aventuriers, engagés dans une mission d'escorte, s'est enfoncé dans les profondeurs d'un repaire souterrain infesté de kobolds et de créatures monstrueuses. Les événements précédents le...
+                            </div>
+                        </div>
+                        <div class="card-arrow">›</div>
+                    </a>
+                </div>
+            </div>
         </div>
+
         <div class="divider">
             <span class="divider-ornament"><svg viewBox="0 0 100 100"><polygon points="50,10 90,50 50,90 10,50"/></svg></span>
         </div>
