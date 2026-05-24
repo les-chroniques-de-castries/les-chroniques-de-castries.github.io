@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Chroniques de Castries ⚔</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>D&D 5e - TBD | Les Chroniques de Castries ⚔</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --parchment: #f4e8c1;
-            --parchment-dark: #e0d0a8;
-            --ink: #2b1810;
-            --ink-light: #4a3525;
-            --crimson: #5e0b0b;
-            --crimson-light: #8b1a1a;
-            --gold: #c4a96e;
-            --gold-bright: #d4af37;
-            --gold-dark: #9a7d3e;
-            --leather: #1c1208;
-            --leather-light: #3a2a18;
+            --parchment: #f9f6ef;
+            --parchment-dark: #e8ddcb;
+            --ink: #1a1a1a;
+            --ink-light: #333333;
+            --crimson: #8b0000;
+            --crimson-light: #b22222;
+            --gold: #b8860b;
+            --gold-bright: #daa520;
+            --gold-dark: #8b6508;
+            --leather: #2b1d0f;
+            --leather-light: #4a3424;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -80,6 +80,22 @@
         .corner.bl::before { bottom: 0; } .corner.bl::after { bottom: 0; }
         .corner.br::before { bottom: 0; } .corner.br::after { bottom: 0; }
 
+
+        /* ===== BACK LINK ===== */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.8em;
+            color: var(--gold-dark);
+            text-decoration: none;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--crimson-light); }
+        .back-link svg { width: 14px; height: 14px; fill: currentColor; }
         /* ===== HERO ===== */
         .hero {
             text-align: center;
@@ -399,90 +415,46 @@
     <div class="container">
         <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
 
+
+        <a href="../index.html" class="back-link" class="back-link">
+            <svg viewBox="0 0 100 100"><polygon points="70,10 30,50 70,90"/></svg>
+            Retour au portail
+        </a>
         <div class="hero">
-            <div class="hero-subtitle">Portail Multi-Systèmes</div>
+            <div class="hero-subtitle">Dungeons & Dragons 5e</div>
             <h1>Les Chroniques de Castries ⚔</h1>
         </div>
 
-        <!-- ===== WORLDS SECTION ===== -->
-        <div class="section-title">Systèmes de Jeu</div>
-        <div class="session-grid">
-            <a href="pf2e/index.html" class="session-card">
-                <div class="card-thumb">
-                    <img src="Assets/opening_scene_v2.png" alt="L'Escorte">
-                </div>
-                <div class="card-body">
-                    <div class="card-session-num" style="background:var(--crimson);">Fantasy Héroïque</div>
-                    <div class="card-title">Pathfinder 2E</div>
-                    <div class="card-meta">
-                        <span><span class="label">Univers</span> Golarion & Plus</span>
-                    </div>
-                    <div class="card-teaser">
-                        Explorez nos campagnes héroïques propulsées par le système Pathfinder Seconde Édition.
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
+        
+                <div class="team-adventures-title">— Campagnes : Dungeons & Dragons 5e —</div>
+                <div class="session-grid">
+                    <a href="TBD/index.html" class="session-card" style="border-left-color: var(--crimson-light);">
+                        <div class="card-thumb">
+                            <img src="../Assets/dnd_thumb.png" alt="Campagne TBD">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-session-num" style="background:#8b0000;">High Fantasy</div>
+                            <div class="card-title" style="color:var(--crimson-light);">Campagne TBD</div>
+                            <div class="card-meta">
+                                <span><span class="label">Monde</span> Royaumes Oubliés</span>
+                            </div>
+                            <div class="card-teaser">
+                                Une nouvelle aventure épique est en préparation...
+                            </div>
+                        </div>
+                        <div class="card-arrow">›</div>
+                    </a>
 
-            <a href="dnd5e/index.html" class="session-card">
-                <div class="card-thumb">
-                    <!-- Placeholder color block for image -->
-                    <img src="Assets/dnd_thumb.png" alt="D&D 5e">
                 </div>
-                <div class="card-body">
-                    <div class="card-session-num" style="background:#8b0000;">High Fantasy</div>
-                    <div class="card-title">Dungeons & Dragons 5e</div>
-                    <div class="card-meta">
-                        <span><span class="label">Univers</span> Royaumes Oubliés & Plus</span>
-                    </div>
-                    <div class="card-teaser">
-                        Plongez dans le plus grand jeu de rôle du monde avec nos campagnes D&D 5e.
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
-
-            <a href="cthulhu/index.html" class="session-card" style="border-left-color: #3d5c48;">
-                <div class="card-thumb">
-                    <!-- Placeholder color block for image -->
-                    <img src="Assets/cthulhu_thumb.png" alt="Cthulhu">
-                </div>
-                <div class="card-body">
-                    <div class="card-session-num" style="background:#3d5c48;">Horreur Cosmique</div>
-                    <div class="card-title" style="color:#527a60;">L'Appel de Cthulhu</div>
-                    <div class="card-meta">
-                        <span><span class="label">Univers</span> Mythe de Cthulhu</span>
-                    </div>
-                    <div class="card-teaser">
-                        Affrontez l'horreur cosmique et la folie à travers nos investigations.
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
-
-            <a href="shoegum/index.html" class="session-card" style="border-left-color: #4a5d73;">
-                <div class="card-thumb">
-                    <img src="Assets/shoegum_thumb.png" alt="Shoegum">
-                </div>
-                <div class="card-body">
-                    <div class="card-session-num" style="background:#4a5d73;">Enquête & Mystère</div>
-                    <div class="card-title" style="color:#647c98;">Système GUMSHOE</div>
-                    <div class="card-meta">
-                        <span><span class="label">Univers</span> Contemporain / Noir</span>
-                    </div>
-                    <div class="card-teaser">
-                        Résolvez des enquêtes complexes où la narration et la collecte d'indices priment.
-                    </div>
-                </div>
-                <div class="card-arrow">›</div>
-            </a>
+            </div>
         </div>
+
         <div class="divider">
             <span class="divider-ornament"><svg viewBox="0 0 100 100"><polygon points="50,10 90,50 50,90 10,50"/></svg></span>
         </div>
 
         <div class="footer">
-            <div class="footer-text">Les Chroniques de Castries ⚔</div>
+            <div class="footer-text">Les Chroniques de Castries ⚔ — D&D 5e</div>
         </div>
     </div>
 </body>
