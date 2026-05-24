@@ -409,7 +409,10 @@
             .team-header { flex-direction: column; text-align: center; }
             .team-card { padding: 20px 15px; }
         }
-    </style>
+    
+        .char-frame.dead img, .mini-frame.dead img { filter: grayscale(100%) sepia(30%) brightness(0.5); }
+        .char-name.dead, .mini-name.dead { color: #888; text-decoration: line-through; }
+</style>
 </head>
 <body>
     <div class="container">
@@ -435,8 +438,8 @@
 
                 <div class="team-members chars-bar">
                     <a href="../../characters/celeste.html" class="chars-bar-item">
-                        <div class="mini-frame"><img src="../../Assets/Celeste.webp" alt="Celeste"></div>
-                        <div class="mini-name">Celeste</div>
+                        <div class="mini-frame dead"><img src="../../Assets/Celeste.webp" alt="Celeste"></div>
+                        <div class="mini-name dead">Celeste ✝</div>
                     </a>
                     <a href="../../characters/go-block.html" class="chars-bar-item">
                         <div class="mini-frame"><img src="../../Assets/GoBlock.webp" alt="Go Block"></div>
@@ -485,7 +488,7 @@
                                 <span><span class="label">Date</span> 24 Mai 2026</span>
                             </div>
                             <div class="card-teaser">
-                                Notre groupe d'aventuriers, engagés dans une mission d'escorte, s'est enfoncé dans les profondeurs d'un repaire souterrain infesté de kobolds et de créatures monstrueuses. Les événements précédents le...
+                                Trois pièges mortels, une alliance inattendue, et un combat féroce contre le tyran Kobold. Une session marquée par un sacrifice tragique qui changera le groupe à jamais...
                             </div>
                         </div>
                         <div class="card-arrow">›</div>

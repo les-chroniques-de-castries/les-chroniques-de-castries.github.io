@@ -210,7 +210,10 @@
             .character-roster { grid-template-columns: repeat(2, 1fr); }
             .image-frame img { max-width: 100%; }
         }
-    </style>
+    
+        .char-frame.dead img, .mini-frame.dead img { filter: grayscale(100%) sepia(30%) brightness(0.5); }
+        .char-name.dead, .mini-name.dead { color: #888; text-decoration: line-through; }
+</style>
 </head>
 <body>
     <div class="container">
@@ -236,8 +239,8 @@
 
         <div class="character-roster">
             <div class="char-item">
-                <div class="char-frame"><img src="../../../Assets/Celeste.webp" alt="Celeste"></div>
-<div class="char-name">Celeste</div><div class="char-player">Roxane</div>
+                <div class="char-frame dead"><img src="../../../Assets/Celeste.webp" alt="Celeste"></div>
+<div class="char-name dead">Celeste ✝</div><div class="char-player">Roxane</div>
             </div>
             <div class="char-item">
                 <div class="char-frame"><img src="../../../Assets/GoBlock.webp" alt="Go Block"></div>
