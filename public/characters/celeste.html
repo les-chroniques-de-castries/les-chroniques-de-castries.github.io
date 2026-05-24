@@ -240,6 +240,7 @@
             .stats-row { flex-direction: column; align-items: center; }
             .ability-grid { grid-template-columns: repeat(3, 1fr); }
         }
+            .char-portrait.dead img { filter: grayscale(100%) sepia(30%) brightness(0.6); }
     </style>
 </head>
 <body>
@@ -253,11 +254,12 @@
 
         <!-- HEADER -->
         <div class="char-header">
-            <div class="char-portrait"><img src="../Assets/Celeste.webp" alt="Celeste"></div>
+            <div class="char-portrait dead"><img src="../Assets/Celeste.webp" alt="Celeste"></div>
             <div class="char-identity">
                 <div class="char-name">Celeste</div>
 <div class="char-player">Jouée par Roxane</div>
                 <div class="char-badges">
+                    <span class="badge level" style="background:#000; border-color:#000;">DÉCÉDÉE LE 24 MAI 2026</span>
                     <span class="badge ancestry">Elfe</span>
                     <span class="badge ancestry">Elfe des murmures</span>
                     <span class="badge class">Enquêteuse</span>
@@ -309,8 +311,8 @@
             <div class="stat-block">
                 <div class="stat-row">
                     <span class="stat-label">Points de Vie</span>
-                    <span class="stat-value">14</span>
-                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:100%"></div></div>
+                    <span class="stat-value">0/14</span>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:0%"></div></div>
                 </div>
                 <div class="stat-row">
                     <span class="stat-label">Experience</span>
